@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>To-Do List</h1>
+
+    <div >
+        
+    </div>
+    <div class="todo-container">
+        <form id="todoForm">
+            <label for="activity">Activity: </label>
+            <input type="text" placeholder="Your Activity" id="activity"><br>
+            <label for="price">Price (RM): </label>
+            <input type="number" name="price" id="price" value="0.0"><br>
+            <label for="type">Type: </label>
+            <select name="type" id="type">
+                <option value="educatiom">Education</option>
+                <option value="recreational">Recreational</option>
+                <option value="social">Social</option>
+                <option value="diy">D.I.Y.</option>
+                <option value="charity">Charity</option>
+                <option value="cooking">Cooking</option>
+                <option value="relaxtation">Relaxtation</option>
+                <option value="music">Music</option>
+                <option value="busywork">Busywork</option>
+            </select><br>
+            <label for="isBookingRequired">Is Booking Required?: </label>
+            <input type="checkbox" name="isBookingRequired" id="isBookingRequired"><br>
+            <label for="accessibility">Accessibility: </label>
+            <input type="range" id="accessibility" name="accessibility" min="0" max="10" value="1"/><br>
+            <button id="add-btn">Add</button>
+            <button id="clear-btn">Clear All</button>
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
