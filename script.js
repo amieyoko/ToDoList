@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let todos = JSON.parse(localStorage.getItem("todos")) || [];
 
     function saveAndRender() {
-        localStorage.setItem("todos", JSON.stringify(activity));
+        localStorage.setItem("todos", JSON.stringify(todo));
         renderTodos();
     }
 
@@ -60,4 +60,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Initial rendering of saved tasks
     renderTodos();
+
+    const listItems = todoList.getElementsByTagName('li');
+    const itemCount = listItems.length;
+    const counter = document.getElementById("counter");
+    counter.innerHTML = itemCount
 });
